@@ -25,6 +25,7 @@ app.get('/history', (req, res) => {
 
 
 app.post('/submit', async (req, res) => {
+  await client.connect();
   const userInput = req.body.userInput;
 
   // Call the fetchData function with the user input
