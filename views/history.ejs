@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie/TvShows History</title>
+  <script src="server.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: lightblue;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    #result-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid lightblue;
+      text-align: left;
+      padding: 8px;
+      background-color: lightblue; 
+      border-right: 5px solid white;
+      border-radius: 15px;
+    }
+    th {
+      background-color: lightblue;
+      border-bottom: 5px solid white;
+    }
+    #clear-history {
+      width: 50px; 
+      display: block;
+      margin-top: 10rem; 
+      margin-left: 45rem;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: white; 
+      position: absolute;
+    }
+    a {
+      width: 40px;
+      display: block;
+      margin-top: 10rem; 
+      margin-left: 47rem;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: white; 
+    }
+    #result-table {
+      width: 70%;
+      margin: 20px auto;
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 20px; 
+      background-color: white; 
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie/TvShows History</h1>
+<center>
+  <div id="result-table">
+    <%- table %>
+  </div>
+</center>
+
+<a href="/">Home</a>
+</body>
+</html>
